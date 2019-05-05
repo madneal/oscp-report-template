@@ -1,0 +1,57 @@
+\documentclass[a4paper, 10pt, oneside]{article}
+\renewcommand{\familydefault}{\sfdefault}
+%---------------------------------------------------------------------------------
+%------------------------- Set the variables for the Mainpage here ---------------
+%---------------------------------------------------------------------------------
+\newcommand{\name}{John Doe}
+\newcommand{\email}{john@doe.com}
+\newcommand{\osid}{OS-11111}
+
+%---------------------------------------------------------------------------------
+%------------------------- Include the list of used packages ---------------------
+%---------------------------------------------------------------------------------
+\input{packages.tex}
+
+%---------------------------------------------------------------------------------
+%------------------------- Create title page -------------------------------------
+%---------------------------------------------------------------------------------
+\title{{\textbf{\Huge Offensive Security}}\\ Penetration Test Report for\\Internal Lab and Exam}
+\author{\vspace{3cm}\\{\LARGE \name}\\[1em]\email\\[1em]OSID: \osid}
+\date{\vspace{7cm}\today}
+
+
+\begin{document}
+%---------------------------------------------------------------------------------
+%------------------------- Print title page --------------------------------------
+%---------------------------------------------------------------------------------
+\maketitle
+\thispagestyle{empty}
+%---------------------------------------------------------------------------------
+%------------------------- Print table of contents -------------------------------
+%---------------------------------------------------------------------------------
+% Attention: Document might need some runs to get all indexes etc right .. usual LaTeX stuff :)
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+
+%---------------------------------------------------------------------------------
+%------------------------- Declaring the empty variables for the hosts -----------
+%---------------------------------------------------------------------------------
+\newcommand{\hostname}{}
+\newcommand{\ip}{}
+\newcommand{\tcpports}{} 
+\newcommand{\udpports}{} 
+\newcommand{\os}{}
+\newcommand{\vuln}{}
+\newcommand{\product}{}
+\newcommand{\vulnx}{}
+\newcommand{\productx}{}
+
+%---------------------------------------------------------------------------------
+%------------ Here are the hosts, ------------------------------------------------
+%------------ just add in the same scheme after you coppied the example folder ---
+%---------------------------------------------------------------------------------
+\input{./hosts/example/host.tex}
+\input{./hosts/DeepThought/host.tex}
+
+\end{document}
