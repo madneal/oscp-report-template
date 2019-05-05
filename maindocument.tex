@@ -21,6 +21,8 @@
 
 
 \begin{document}
+
+
 %---------------------------------------------------------------------------------
 %------------------------- Print title page --------------------------------------
 %---------------------------------------------------------------------------------
@@ -34,13 +36,82 @@
 \thispagestyle{empty}
 \pagebreak
 
+\section{Offensive	Security Lab	and	Exam Penetration	Test	Report}
+
+\subsection{Introduction}
+The	 Offensive	 Security Lab	 and	 Exam	 penetration	 test	 report should	 contain	 all	 the	 steps	 taken	 to	
+successfully	compromise	machines	both	in	the	exam	and	lab	environments. Accompanying	data	used	in	
+both	environments	should	also	be	included,	such	as	PoCs,	custom	exploit	code,	and	so	on.	Please	note
+that	this	report	will	be	graded	from	a	standpoint	of	correctness	and	completeness. The	purpose	of	this	
+report	is	 to	ensure	 that	 the	 student	 has	a	 full	 understanding	 of	 penetration	 testing	methodologies	as	
+well	 as	 the	 technical	 knowledge	 required	 to	 successfully	 achieve	 the Offensive	 Security Certified	
+Professional	(OSCP)	certification.
+
+\subsection{Objective}
+The	objective	of	this	assessment	is	to	perform	an	internal	penetration	test	against	the	Offensive	Security
+Lab	and	Exam	network. The	student	is	tasked	with	following	methodical	approach	in	obtaining	access	to	
+the	objective	goals.	This	test	should	simulate	an	actual	penetration	test	and	how	you	would	start	from	
+beginning	to	end,	including	the	overall	report. A	sample	page	has	been	included	in	this	document	that	
+should	help	you	determine	what	is	expected	of	you from	a	reporting	standpoint. Please	use	the	sample	
+report	as	a	guide to	get	you	through	the	reporting requirement	of	the	course.
+
+\subsection{Requirements}
+The	student	will	be	required	to	complete	this	penetration	testing	report	in	its	entirety and	to	include	the	
+following	sections:
+\begin{itemize}
+  \item Overall	High-Level	Summary and	Recommendations	(Non-technical)
+  \item Methodology	walk-through	and	detailed	outline	of	steps	taken
+  \item Each	 finding	with accompanying screenshots,	walk-throughs,	 sample code,	and	 proof.txt file if
+applicable.
+  \item Any	additional	items	as	deemed	necessary
+\end{itemize}
+
+\section{	Report High-Level	Summary}
+
+OS-XXXXX	was	 tasked	with	 performing	an	internal	 penetration	 test in	 the Offensive	Security Labs and	
+Exam	network.	An	internal	penetration	test is	a	simulated attack	against	internally	connected	systems.
+	
+The	 focus	 of	 this	 test	 is	 to	 perform	 attacks,	 similar	 to	 those	 of	 a	 malicious	 entity, and	 attempt to	
+infiltrate	Offensive	Security's	internal	lab	systems the	THINC.local domain,	and	the	exam	network. OSXXXXX's	 overall	 objective	 was	 to	 evaluate	 the	 network,	 identify	 systems,	 and	 exploit	 flaws	 while	
+reporting the	findings	back	to	Offensive	Security.
+
+While conducting the	 internal	 penetration	 test,	 there	 were	 several	 alarming	 vulnerabilities	 that	were	
+identified	 within Offensive	 Security's	 network.	 For	 example,	 OS-XXXXX	 was	 able	 to	 gain	 access	 to	
+multiple	machines,	primarily	due	to	outdated	patches	and	poor	security	configurations.		During	testing,	
+OS-XXXXX	had	administrative	level	access	 to	multiple	 systems.	All	 systems	were	 successfully	exploited	
+and	access	granted.	These	systems	as	well	as	a	brief	description	on	how	access	was	obtained	are	listed	
+below:
+
+
+
+\begin{itemize}
+        \item Target \#1	- Obtained a	low-privilege shell	via	the	vulnerable	web	application	called	'KikChat'.	
+Once	in,	access	was	leveraged	to	escalate to	'root'	using	the	'getsystem' command	in	
+Meterpreter
+\end{itemize}
+
+\section{Report	- Recommendations}
+
+OS-XXXXX recommends	patching	the	vulnerabilities	identified	during	the	penetration	test to	ensure	that	
+an	attacker	 cannot	exploit	 these	 systems	 in	 the	 future.	One	 thing	 to	 remember	 is	 that	 these	 systems	
+require	 frequent	 patching	 and	 once	 patched,	 should	 remain	 on	 a	 regular	 patch	 program	 in	 order	 to	
+mitigate	additional	vulnerabilities	that may	be discovered	at	a	later	date
+
+\section{Report	- Methodologies}
+OS-XXXXX utilized a	 widely	 adopted	 approach	 to	 performing	 penetration	 testing	 that	 is	 effective	 in	
+testing	how	well	the	Offensive	Security Labs	and	Exam	environments	are	secure.	Below	is	a	summary of	
+how	OS-XXXXX	was	able	to	identify	and exploit	a	number	of	systems.
+
+
+
+
 %---------------------------------------------------------------------------------
 %------------------------- Declaring the empty variables for the hosts -----------
 %---------------------------------------------------------------------------------
 \newcommand{\hostname}{}
 \newcommand{\ip}{}
-\newcommand{\tcpports}{} 
-\newcommand{\udpports}{} 
+\newcommand{\tcpports}{}
+\newcommand{\udpports}{}
 \newcommand{\os}{}
 \newcommand{\vuln}{}
 \newcommand{\product}{}
